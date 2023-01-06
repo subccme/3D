@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        img {
+            transform: rotateY(0deg);
+            /* default state */
+            transition: transform 1.5s;
+            /* smooth transition */
+        }
+
+        img:hover {
+            transform: rotateX(90deg);
+            /* transform when hovering */
+        }
+
+        .img-container {
+            position: relative;
+            /* container element */
+        }
+
+        img {
+            position: absolute;
+            /* position images absolute */
+            left: 550px;
+            right: 100px;
+            top: 250px;
+            bottom: 200px;
+        }
+
+        /* set z-index to stack images */
+        .container:hover img:nth-child(4) {
+            transform: translate(-100px, 100px);
+            opacity: 1;
+        }
+
+        .container:hover img:nth-child(3) {
+            transform: translate(-80px, 80px);
+            opacity: .8;
+        }
+
+        .container:hover img:nth-child(2) {
+            transform: translate(-60px, 60px);
+            opacity: .6;
+        }
+
+        .container:hover img:nth-child(1) {
+            transform: translate(-40px, 40px);
+            opacity: .4;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=3d, initial-scale=1.0">
+    <title>3D</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="image">
+            <img
+                src="https://images.unsplash.com/photo-1423784346385-c1d4dac9893a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzJ8fHBob25lfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60">
+            <img
+                src="https://images.unsplash.com/photo-1423784346385-c1d4dac9893a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzJ8fHBob25lfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60">
+            <img
+                src="https://images.unsplash.com/photo-1423784346385-c1d4dac9893a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzJ8fHBob25lfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60">
+            <img
+                src="https://images.unsplash.com/photo-1423784346385-c1d4dac9893a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzJ8fHBob25lfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60">
+        </div>
+    </div>
+
+</body>
+
+</html>
