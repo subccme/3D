@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Stack</title>
+    <style>
+        .image-container {
+            position: relative;
+            width: 500px;
+            height: 300px;
+            /* set the duration of the transition */
+            transition: opacity 0s;
+
+        }
+
+        .image {
+            position: absolute;
+            width: 500px;
+            height: 300px;
+            animation: fade 15s linear infinite;
+            animation-delay: 0.2s;
+            left: 500px;
+            top: 250px;
+
+        }
+
+
+
+        /* define the animation */
+        @keyframes fade {
+
+            /* set the initial state of the image */
+            10% {
+                opacity: 1;
+            }
+
+
+            40% {
+                background-image: url(https://images.unsplash.com/photo-1672843164650-b39a24c549a0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyOXx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60);
+                opacity: 1;
+            }
+
+            70% {
+                background-image: url(https://images.unsplash.com/photo-1672862817339-51ef2610a5d0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxNHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60);
+                opacity: 1;
+            }
+
+
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <div class="image-container">
+        <div class="image"
+            style="background-image: url(https://images.unsplash.com/photo-1672948522118-a6341bd52901?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60);">
+        </div>
+
+</body>
+
+</html>
