@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Sun</title>
+    <style>
+        :root {
+            overflow: hidden;
+            background-color: rgb(52, 131, 234);
+            display: flex;
+            justify-content: center;
+        }
+
+        .Moon {
+            background-color: yellow;
+            border-radius: 50%;
+            height: 50vh;
+            aspect-ratio: 1 / 1;
+            animation: 4s linear 0s infinite alternate animating-multiple-properties;
+        }
+
+        /* it is possible to animate multiple properties in a single animation */
+        @keyframes animating-multiple-properties {
+            from {
+                transform: translateY(110vh);
+                background-color: yellow;
+                filter: brightness(75%);
+            }
+
+            to {
+                transform: translateY(0);
+                background-color: orangered;
+                /* unset properties i.e. 'filter' will revert to default values */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="Moon"></div>
+</body>
+
+</html>
