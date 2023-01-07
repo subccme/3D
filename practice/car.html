@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>car</title>
+    <style>
+        .road {
+            width: 1500px;
+            height: 200px;
+            background-image: url(https://media2.giphy.com/media/vbGLQXbaOoi2WXBNaF/giphy.gif);
+        }
+
+        .car {
+            position: absolute;
+            width: 10px;
+            height: 30px;
+            animation: drive 4s linear infinite;
+        }
+
+        /* define the animation */
+        @keyframes drive {
+
+            /* move the car from left to right */
+            from {
+                left: 0;
+                top: 50px;
+            }
+
+            to {
+                left: 800px;
+                top: 50px;
+            }
+        }
+    </style>
+
+
+    <div class="road">
+        <!-- car -->
+        <div class="car">
+            <img src="D:\car.png">
+        </div>
+    </div>
+
+</head>
+
+<body>
+    <div class="road">
+        <!-- car -->
+        <div class="car"></div>
+    </div>
+
+</body>
+
+</html>
